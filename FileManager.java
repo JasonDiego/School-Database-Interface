@@ -1,6 +1,6 @@
 package schooldatabase;
 
 public interface FileManager {
-	public void read();
+	public Account read();
 	public void fileType();
 }
