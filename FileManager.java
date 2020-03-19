@@ -1,6 +1,8 @@
 package schooldatabase;
 
+import java.util.ArrayList;
+
 public interface FileManager {
-	public Account read(String dataFileLocation);
+	public ArrayList<Account> read(String dataFileLocation);
 	public void fileType();
 }
