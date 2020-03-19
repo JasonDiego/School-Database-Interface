@@ -17,7 +17,7 @@ public class CSVReader {
 			sc = new Scanner(src, "URF-8");
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found!");
-			return null;
+			return acctList;
 		}
 		
 		// read through data file
