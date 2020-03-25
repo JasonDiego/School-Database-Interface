@@ -36,12 +36,15 @@ public class Runner {
 			studentDatabase = csvr.read("");
 			break;
 		case 4:
-			
+			MySQLReader sqlr = new MySQLReader();
+			sqlr.fileType();
+			studentDatabase = sqlr.read("jdbc:mysql://localhost:3306/schooldb");
 			break;
 		default:
 			System.out.println("Invalid input.");
 		}
 		
+		System.out.println(studentDatabase);
 		
 	}
 	
